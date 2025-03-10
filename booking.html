@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book this Hall</title>
+    <link rel="stylesheet" href="styles/booking1.css">
+</head>
+<body>
+
+    <div class="booking-container">
+        <h2>Book this Hall</h2>
+        <p>Select a date, time slot, and requirements</p>
+
+        <form id="bookingForm">
+            <!-- Date Selection -->
+            <label for="bookingDate">Select date</label>
+            <input type="date" id="bookingDate" name="bookingDate" required>
+
+            <!-- Time Selection -->
+            <div class="time-selection">
+                <div>
+                    <label for="startTime">From</label>
+                    <select id="startTime" name="startTime" required>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">01:00</option>
+                        <option value="14:00">02:00</option>
+                        <option value="15:00">03:00</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="endTime">To</label>
+                    <select id="endTime" name="endTime" required>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">01:00</option>
+                        <option value="14:00">02:00</option>
+                        <option value="15:00">03:00</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Additional Requirements -->
+            <div class="requirements">
+                <h3>Additional Requirements</h3>
+
+                <label>
+                    <input type="checkbox" name="requirements" value="Projector"> Projector
+                </label>
+
+                <!-- Mic Selection with Count -->
+                <label>
+                    <input type="checkbox" id="micCheckbox" onclick="toggleInput('micInput', 'micCheckbox')"> Mic
+                </label>
+                <div id="micInput" class="hidden">
+                    <label for="micCount"></label>
+                    <input type="number" id="micCount" name="micCount" min="1" max="10" value="1">
+                </div>
+
+                <label>
+                    <input type="checkbox" name="requirements" value="Technical Support"> Technical Support
+                </label>
+
+                <!-- Chair Selection with Count -->
+                <label>
+                    <input type="checkbox" id="chairCheckbox" onclick="toggleInput('chairInput', 'chairCheckbox')"> Chair for Chief Guest
+                </label>
+                <div id="chairInput" class="hidden">
+                    <label for="chairCount"></label>
+                    <input type="number" id="chairCount" name="chairCount" min="1" max="10" value="1">
+                </div>
+            </div>
+
+            <!-- Purpose of Booking -->
+            <label for="bookingPurpose">Purpose of booking</label>
+            <textarea id="bookingPurpose" name="bookingPurpose" placeholder="Briefly describe the purpose of your booking..." required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submitBookingBtn" class="submit-btn">Submit Booking</button>
+
+        </form>
+    </div>
+
+    <script>
+        // Function to toggle input fields for Mic and Chair selection
+        function toggleInput(inputId, checkboxId) {
+            const inputField = document.getElementById(inputId);
+            const checkbox = document.getElementById(checkboxId);
+
+            if (checkbox.checked) {
+                inputField.classList.remove("hidden");
+            } else {
+                inputField.classList.add("hidden");
+            }
+        }
+        
+    </script>
+    <script src="js/script2.js"></script>
+
+</body>
+</html>

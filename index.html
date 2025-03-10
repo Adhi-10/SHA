@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall Booking System - Login</title>
+    <link rel="stylesheet" href="styles/index1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Hall Booking System</h2>
+        <p>Sign in to book seminar halls and meeting rooms</p>
+        
+        <!-- Login Form -->
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="your@email.com" required>
+            <input type="password" id="loginPassword" placeholder="********" required>
+            <a href="#" id="forgotPassword">Forgot password?</a>
+            <button type="submit" class="btn-primary">Sign In</button>
+            <button type="button" id="createAccountBtn" class="btn-secondary">Create Account</button>
+        </form>
+
+        <!-- Signup Form (Initially Hidden) -->
+        <form id="signupForm" style="display: none;">
+            <input type="text" id="signupName" placeholder="Full Name" required>
+            <input type="email" id="signupEmail" placeholder="your@email.com" required>
+            <input type="password" id="signupPassword" placeholder="********" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <button type="submit" class="btn-primary">Create Account</button>
+            <button type="button" id="backToLoginBtn" class="btn-secondary" onclick="toggleForm()">Back to Login</button>
+        </form>
+    </div>
+    
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

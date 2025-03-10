@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="styles/reset1.css">
+</head>
+<body>
+    <div class="reset-container">
+        <div class="reset-box">
+            <h2>Reset Password</h2>
+            <p>Enter your email address and we'll send you a link to reset your password.</p>
+            <form id="reset-password-form">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="your@email.com" required />
+                <button type="submit">Send Reset Link</button>
+            </form>
+            <a href="#" id="backToSignIn">Back to Sign In</a>
+
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("reset-password-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value;
+            fetch("/forgot-password", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email }),
+            })
+            .then(response => response.json())
+            .then(data => alert(data.message));
+        });
+    </script>
+    <script src="js/reset.js"></script>
+
+</body>
+</html>
