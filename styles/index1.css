@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #eef2ff, #c7d2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login & Signup Container */
+.container {
+    background: white;
+    padding: 40px; /* Increased padding for better spacing */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 400px; /* Increased width for better alignment */
+    text-align: center;
+}
+/* Apply Background Image */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+/* Heading & Text */
+h2 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 22px; /* Adjusted for better readability */
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input, select, textarea {
+    width: 100%; /* Ensures full-width alignment */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+    width: 100%; /* Ensures buttons align properly */
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background: #1e40af;
+}
+
+.btn-secondary {
+    background: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+.btn-secondary:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    color: #2563eb;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}

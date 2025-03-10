@@ -1,0 +1,80 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Confirmation Container */
+.confirmation-container {
+    background: #eafaf1; /* Light green background */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Success Icon */
+.success-icon {
+    font-size: 50px;
+    color: green;
+}
+
+/* Heading */
+h2 {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Confirmation Message */
+p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Details Box */
+.details-box {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.details-box p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.details-box strong {
+    color: #555;
+}
+
+.details-box span {
+    font-weight: bold;
+    color: black;
+}
+
+/* Back Button */
+.back-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}

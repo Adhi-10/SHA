@@ -1,0 +1,88 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #556d73, #8e9eab);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Reset Password Box */
+.reset-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.reset-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+.reset-box h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.reset-box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.reset-box label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.reset-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button Styling */
+.reset-box button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-box button:hover {
+    background: #0056b3;
+}
+
+/* Back to Sign In Link */
+.back-link {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #0056b3;
+}
+
